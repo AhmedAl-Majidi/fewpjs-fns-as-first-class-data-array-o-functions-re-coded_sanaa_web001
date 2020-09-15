@@ -38,7 +38,7 @@ let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog
 
 function exerciseDog(dogName, dogBreed) {
   for (var i = 0; i < routine.length; i++) {
-    routine[i](dogName, dogBreed);
+    routine.map( ele =>ele(dogName, dogBreed));
   }
   return routine;
 }
